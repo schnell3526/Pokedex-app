@@ -13,9 +13,11 @@ const Card: React.FC<Props> = ({pokemon}) => {
         <div className="cardTypes">
             <div>タイプ</div>
             {pokemon.types.map((type: any) => {
-                return <div>
-                    <span className="typeName">{type.type.name}</span>
-                </div>
+                return (
+                    <div key={type.type.name}>
+                        <span className="typeName">{type.type.name}</span>
+                    </div>
+                );
             })}
         </div>
         <div className="cardInfo">

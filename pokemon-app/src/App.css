@@ -10,4 +10,22 @@
   place-items: center;
   gap: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn button {
+  padding: 13px 32px;
+  background-color: burlywood;
+  border: none;
+  box-shadow: 9px 21px 26px -2px #777777;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3;
+  margin-bottom: 20px;
+}
+
+.btn button:hover {
+  transform: translateY(5px);
+  box-shadow: none;
 }
